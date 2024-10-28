@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown">Secciones &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hobbies.html">Hobbis</a></li>
+                        <li><a href="estudios.html">Estudios Realizados</a></li>
+                        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+                        <li><a href="horario.html">Mi Horario</a></li>
+                        <li><a href="contacto.html">Datos Personales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Cómo Contactarme</h2>
+        <p><strong>Email:</strong> gomez.eliel@icloud.com</p>
+        <p><strong>Teléfono:</strong> +52 243 112 43 54</p>
+
+        <h3>Formulario de Contacto</h3>
+        <form id="contact-form" action="mailto:gomez.eliel@icloud.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Número de Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Borrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&nbsp;</p>
+  <div class="social-icons">
+            <a href="https://www.facebook.com/eliel.gomez.739978?locale=es_LA" target="_blank">
+                <img src="imagenes/index/facebbok.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/elielpg20/?next=%2Felielpg20%2F" target="_blank">
+                <img src="imagenes/index/inta.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/elielgomez20?s=21" target="_blank">
+                <img src="imagenes/index/8e72f7331b652b842b0c271ab144d332.png" alt="Twitter" width="26" height="31">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

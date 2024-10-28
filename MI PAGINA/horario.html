@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Horario</title>    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Estilos adicionales para el horario */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: #f8f9fa;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        td {
+            vertical-align: middle;
+        }
+        img {
+            max-width: 50px; /* Ajustar el tamaño de las imágenes */
+            border-radius: 8px; /* Bordes redondeados para las imágenes */
+        }
+        .scrollable {
+            max-height: 400px; /* Altura máxima para hacer desplazable */
+            overflow-y: auto; /* Desplazamiento vertical */
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <header>
+        <h1>Mi Horario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown">Secciones &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hobbies.html">Hobbis</a></li>
+                        <li><a href="estudios.html">Estudios Realizados</a></li>
+                        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+                        <li><a href="datos.html">Datos Personales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="scrollable">
+        <h2>Horario Personal</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                    <th>Descripción</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Lunes, Miércoles</td>
+                    <td height="111">5 AM - 3 PM</td>
+                    <td>Voy a La universidad</td>
+                    <td><img src="imagenes/Horario/images.png" alt="Lunes y Miércoles"></td>
+                </tr>
+                <tr>
+                    <td height="124">6 PM - 10 PM</td>
+                    <td>Actividades en casa como tareas y labores</td>
+                    <td><img src="imagenes/Horario/labores.png" alt="Martes y Jueves"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Martes, Jueves</td>
+                    <td>7 AM - 5 PM</td>
+                    <td>Clases, estudio en la universidad.</td>
+                    <td><img src="imagenes/Horario/images.png" alt="Martes y Jueves"></td>
+                </tr>
+                <tr>
+                    <td height="32"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td height="108">Viernes</td>
+                    <td>8 PM - 10 PM</td>
+                    <td>Estoy en casa </td>
+                    <td><img src="imagenes/Horario/tarea.jpg" alt="Viernes"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Sábados, Domingos</td>
+                    <td>10 AM - 1 PM</td>
+                    <td>Salgo con la familia</td>
+                    <td><img src="imagenes/Horario/paseoç.jpg" alt="Sábados y Domingos"></td>
+                </tr>
+                <tr>
+                    <td height="181">8 PM - 10 PM</td>
+                    <td>Estar en casa o salir de fiesta o de paseo</td>
+                    <td><img src="imagenes/Horario/antro.png" alt="Martes y Jueves"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   <footer>
+        <p>&nbsp;</p>
+  <div class="social-icons">
+            <a href="https://www.facebook.com/eliel.gomez.739978?locale=es_LA" target="_blank">
+                <img src="imagenes/index/facebbok.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/elielpg20/?next=%2Felielpg20%2F" target="_blank">
+                <img src="imagenes/index/inta.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/elielgomez20?s=21" target="_blank">
+                <img src="imagenes/index/8e72f7331b652b842b0c271ab144d332.png" alt="Twitter" width="26" height="31">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

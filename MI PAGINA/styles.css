@@ -1,0 +1,156 @@
+/* Estilos Generales */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #003399; /* Color de fondo general */
+	background-image: url(imagenes/index/fondo.jpg);
+}
+  /* Estilos para redes sociales */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 30px; /* Ancho de los iconos */
+            margin: 0 10px; /* Espaciado entre iconos */
+        }
+
+/* Estilo del Encabezado */
+header {
+	color: #FFFFFF; /* Color del texto en el encabezado (blanco) */
+	padding: 20px;
+	text-align: center;
+	background-image: url(imagenes/index/fondo.jpg);
+}
+
+/* Estilos del Menú de Navegación */
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar elementos en línea */
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+nav ul li a {
+    display: block; /* Asegurarse que el enlace ocupe todo el espacio */
+    color: #ffffff; /* Color del texto del menú (blanco) */
+    padding: 15px 20px; /* Espaciado interno del enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave del fondo */
+}
+
+/* Estilos del Menú Desplegable */
+.dropdown-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 100%; /* Colocar justo debajo del elemento padre */
+    left: 0; /* Alinear a la izquierda */
+    background-color: #ffffff; /* Color de fondo del menú desplegable (blanco) */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra del menú desplegable */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    animation: dropDown 0.3s ease forwards; /* Animación de aparición */
+    padding: 10px 0; /* Espaciado interno (vertical) */
+}
+
+/* Estilos de los elementos del menú desplegable */
+.dropdown-menu li {
+    display: block; /* Cada elemento en bloque */
+    margin: 0; /* Sin margen */
+}
+
+.dropdown-menu li a {
+    padding: 15px 30px; /* Espaciado interno aumentado (horizontales y verticales) */
+    color: #2980b9; /* Color del texto (azul fuerte) */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #34495e; /* Color de fondo en hover del menú desplegable (gris oscuro) */
+    color: #ffffff; /* Color de texto en hover (blanco) */
+}
+
+/* Estilo para el contenido principal */
+section {
+	padding: 20px; /* Fondo blanco para la sección */
+	margin: 20px; /* Margen alrededor de la sección */
+	border-radius: 5px; /* Bordes redondeados */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	opacity: 0; /* Inicialmente oculto */
+	transform: translateY(20px); /* Mueve hacia abajo */
+	animation: fadeInUp 0.5s forwards; /* Animación de entrada */
+	background-color:inherit;
+}
+
+/* Estilo del pie de página */
+footer {
+	text-align: center;
+	padding: 10px; /* Fondo del pie de página (gris oscuro) */
+	color: #ffffff; /* Color del texto en el pie de página (blanco) */
+	background-image: url(imagenes/index/fondo.jpg);
+}
+
+/* Animación del menú desplegable */
+@keyframes dropDown {
+    from {
+        opacity: 0; /* Comienza transparente */
+        transform: translateY(-10px); /* Mueve hacia arriba */
+    }
+    to {
+        opacity: 1; /* Termina visible */
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+
+/* Animación de entrada para secciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Comienza transparente */
+        transform: translateY(20px); /* Mueve hacia abajo */
+    }
+    to {
+        opacity: 1; /* Termina visible */
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+nav ul li:hover .dropdown-menu {
+    display: block; /* Muestra el menú desplegable */
+}
+
+/* Animaciones en las tarjetas */
+.card {
+    background-color: #ffffff; /* Fondo de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre las tarjetas */
+.card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Efectos de desplazamiento para textos */
+h1, h2, h3, p {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+h1:hover, h2:hover, h3:hover, p:hover {
+	color: #000099; /* Cambia el color del texto al pasar el mouse (azul fuerte) */
+	transform: scale(1.05); /* Aumenta ligeramente el tamaño del texto */
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .carousel {
+            margin: 30px auto;
+            border: 2px solid #007bff; /* Borde azul */
+            border-radius: 10px; /* Esquinas redondeadas */
+            overflow: hidden; /* Para evitar que se desborden las imágenes */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro más opaco */
+            border-radius: 5px;
+            padding: 10px; /* Padding reducido para un diseño más limpio */
+        }
+        .carousel-caption h5 {
+            font-size: 1.5rem; /* Aumentar tamaño de título */
+            font-weight: bold; /* Título en negrita */
+            color: #ffcc00; /* Color dorado */
+        }
+        .carousel-caption p {
+            font-size: 0.9rem; /* Tamaño de texto de la descripción */
+            color: #ffffff; /* Color blanco para el texto */
+            margin: 0; /* Sin margen */
+        }
+        .hobbies-section {
+	margin-top: 50px;
+	text-align: center;
+	background-color: #FFF;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permitir que los videos se alineen en filas */
+            margin: 30px 0; /* Espaciado superior e inferior */
+        }
+        .video-container iframe {
+            margin: 10px; /* Espaciado entre videos */
+            border: 2px solid #007bff; /* Borde azul para los videos */
+            border-radius: 10px; /* Esquinas redondeadas para videos */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+       
+        .description {
+            font-style: italic; /* Cursiva para las descripciones */
+            color: #555; /* Color gris oscuro */
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header>
+        <h1>Mis Hobbies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="dropdown">Secciones &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="datos.html">Datos personales</a></li>
+                        <li><a href="estudios.html">Estudios Realizados</a></li>
+                        <li><a href="experiencia.html">Experiencia Laboral</a></li>
+                        <li><a href="horario.html">Mi Horario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hobbies-section">
+        <h1>Algunos de Mis Hobbies</h1>
+
+        <h2 class="text-center">Leer</h2>
+        <p class="text-center">La lectura es uno de mis pasatiempos favoritos, me permite explorar nuevos mundos y adquirir conocimiento. Aquí están algunos de mis libros preferidos:</p>
+        <div id="carouselLeerLibros" class="carousel slide mx-auto" style="width: 80%; max-width: 600px;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/hobbits/libro q.jpg" class="d-block w-100" alt="Leer libros 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Renacer</h5>
+                        <p class="description">Renacer es una historia basada en la experiencia personal de vivir con VIH, muestra el tan desgarrador proceso que sin duda experimentan las personas al recibir la noticia de un diagnostico no esperado en sus vidas.Narra de manera cruda la vivencia de individuo en fase SIDA y como su vida se fragmenta en miles de pedazos, afronta la inminente perdida de la autonomía, la estabilidad emocional y la salud física e intenta dar respuesta los cuestionamientos que ocupan su mente cada instante. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/libro 2.jpg" alt="Leer libros 2" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Revivir</h5>
+                        <p class="description">Revivir, Del abismo de la adicción al amor propio, es la secuela de su hermano literario "Renacer", -El camino de la oscuridad a la libertad personal, sin embargo, este libro llega a tus manos de una manera natural y sin maquillajes sociales ni personales.<br>
+                        Cada capítulo y palabra que lo conforma busca poder establecer puentes de comprensión con otros adictos, alcohólicos y con sus familiares, en las adicciones no existe protagonismo pues como personas que experimentamos pérdidas a través de nuestras consecuencias por nuestros consumos, sabemos lo difícil que es cargar con la vergüenza toxica y nuestro pesar emocional como resultado de nuestro dolor personal.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLeerLibros" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLeerLibros" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="text-center">Viajar</h2>
+        <p class="text-center">Viajar me permite conocer nuevas culturas y disfrutar de hermosos paisajes. Aquí hay algunos de mis destinos favoritos:</p>
+        <div id="carouselViajar" class="carousel slide mx-auto" style="width: 80%; max-width: 600px;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/hobbits/viaje 1.jpg" alt="Viajar 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SAN JOSE DEL PACIFICO</h5>
+                        <p class="description">Enta foto es de mi visita de la sierra norte de OAXACA</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/viaje 2.jpg" class="d-block w-100" alt="Viajar 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NEVADO DE TOLUCA</h5>
+                        <p class="description">Esta foto se tomo cuando escale el nevado de toluca con unos amigos en Mexico </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/viaje 3.jpg" class="d-block w-100" alt="Viajar 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SANTO DOMINGO OAXACA</h5>
+                        <p class="description">Esta foto la tome en Oaxaca es la iglesia de santo domingo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/865441da-89e2-4b25-96a4-05c514c8b11d.jpg" class="d-block w-100" alt="Viajar 4">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>ZIPOLITE OAXACA</h5>
+                        <p class="description">Esta foto me la tome cundo visite la playa nudista de oaxaca</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/vuelo.jpg"  alt="Viajar 5">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>VUELO  A MERIDA</h5>
+                        <p class="description">Esta foto la tome en el avion cuando visite Yucatan</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselViajar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselViajar" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="text-center">Bailar</h2>
+<p class="text-center">Bailar es una forma hermosa de expresión artística y diversión. Aquí hay algunas imágenes de mis momentos bailando:</p>
+<div id="carouselBailar" class="carousel slide mx-auto" style="width: 80%; max-width: 600px;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active"><img src="imagenes/hobbits/IMG_1316.JPG" alt="Bailar 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bailando Artesa</h5>
+                <p class="description">Esta foto me la tomaron en geurrero</p>
+          </div>
+      </div>
+        <div class="carousel-item">
+            <img src="imagenes/hobbits/IMG_1315.JPG" class="d-block w-100" alt="Bailar 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bailando Chihuahua</h5>
+                <p class="description">Esta foto me la tomaron en Chihuahua</p>
+          </div>
+      </div>
+        <div class="carousel-item">
+            <img src="imagenes/hobbits/ee5f9d16-50bd-403a-8b42-ef5f29e5096b.jpg" class="d-block w-100" alt="Bailar 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bailando Veracruz</h5>
+                <p class="description">Esta foto me la tomaron en la graduacion de La universidad</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="imagenes/hobbits/FB_IMG_1666592711110.jpg" class="d-block w-100" alt="Bailar 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bailando Nigeria</h5>
+                <p class="description">	Esta foto me la tomaron en oaxaca en un concurso internacional</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="imagenes/hobbits/IMG_1317.JPG" class="d-block w-100" alt="Bailar 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bailando Venezuela</h5>
+                <p class="description">Esta foto me la tomaron en Matamoros</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBailar" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselBailar" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+        <h2 class="text-center">Ver Películas</h2>
+        <p class="text-center">Ver películas es una excelente forma de entretenimiento y relajación. Aquí hay algunas de mis películas favoritas:</p>
+        <div id="carouselVerPeliculas" class="carousel slide mx-auto" style="width: 80%; max-width: 600px;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/hobbits/la-noche-del-demonio3.jpg" class="d-block w-100" alt="Ver Películas 1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>LA NOCHE DEL DEMONIO</h5>
+                        <p class="description">La quinta entrega, La noche del demonio: La puerta roja, fue dirigida por Patrick Wilson, quien interpreta a Josh Lambert desde la primera película. 
+En la saga, una familia se da cuenta de que espíritus malignos han tomado posesión de su nuevo hogar y que su hijo ha caído en coma. En La noche del demonio: Capítulo 2, Josh y Renai Lambert se mudan a la casa de la madre de Josh para comenzar una nueva vida, pero comienzan a experimentar visiones extrañas y fenómenos paranormales. </p>
+                  </div>
+              </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/rio.jpeg" alt="Ver Películas 2" width="815" height="488" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>EL SECRETO DEL RIO</h5>
+                        <p class="description">El Secreto del Río es una serie de Netflix que trata sobre la amistad entre dos niños que se reencuentran 20 años después de un trágico suceso que los unió</p>
+                  </div>
+              </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/warren.jpg" alt="Ver Películas 3" width="530" height="414" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>EL CONJURO</h5>
+                        <p class="description">La saga de los Warren, también conocida como Expediente Warren, es una serie de películas de terror que se inspira en la vida de Ed y Lorraine Warren, un matrimonio que investigó casos paranormales en Estados Unidos en los años 50 y 60:</p>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVerPeliculas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVerPeliculas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="text-center">Escuchar Música</h2>
+        <p class="text-center">La música es una gran compañera en cualquier momento. Aquí hay alguns de mis Artistas favoritas:</p>
+        <div id="carouselEscucharMusica" class="carousel slide mx-auto" style="width: 80%; max-width: 600px;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/hobbits/krol.jpg" class="d-block w-100" alt="Escuchar Música 1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>KAROL G</h5>
+                        <p class="description">Carolina Giraldo Navarro conocida artísticamente como Karol G, es una cantante, compositora y empresaria colombiana</p>
+                  </div>
+              </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/don mar.jpeg" alt="Escuchar Música 2" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>DON OMAR</h5>
+                        <p class="description">William Omar Landrón Rivera más conocido por su nombre artístico Don Omar, es un cantante, rapero compositor, productor musical, empresario y actor puertorriqueño</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbits/feid.jpg" alt="Escuchar Música 3" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>FEID</h5>
+                        <p class="description">Salomón Villada Hoyos​, más conocido como Feid o Ferxxo, ​ es un cantante, compositor y productor discográfico colombiano</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEscucharMusica" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEscucharMusica" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="text-center">Mis Recurdos en Videos Favoritos</h2>
+        El folklore es una expresión vibrante que une a las personas y celebra nuestras costumbres. En este video, verás pasos llenos de energía y color, acompañados por música tradicional que resuena con el espíritu de nuestras fiestas y celebraciones. Cada vestuario y coreografía está diseñado para capturar la esencia de nuestras tradiciones, desde las danzas de los pueblos indígenas hasta las celebraciones populares.
+         <h2>Mis Videos de Baile Folklórico</h2>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/Pdz5qGxSsaM" title="Video 1" allowfullscreen></iframe>
+            <p><strong>Este video fue un concurso nacional Donde participe en 2019 y ganamos</strong></p>
+        </div>
+        <div class="video-item">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/rlewPBqmjR8" title="Video 2" allowfullscreen></iframe>
+            <p><strong>Este video fue en un concurso internacional </strong></p>
+        </div>
+        <div class="video-item">
+          <p>&nbsp;</p>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+      <p>&nbsp;</p>
+  <div class="social-icons">
+            <a href="https://www.facebook.com/eliel.gomez.739978?locale=es_LA" target="_blank">
+                <img src="imagenes/index/facebbok.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/elielpg20/?next=%2Felielpg20%2F" target="_blank">
+                <img src="imagenes/index/inta.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/elielgomez20?s=21" target="_blank">
+                <img src="imagenes/index/8e72f7331b652b842b0c271ab144d332.png" alt="Twitter" width="26" height="31">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
